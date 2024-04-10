@@ -11,8 +11,9 @@ Using `Synthetic data` to replace real-world collected data is an ideal way to s
 Picture：High-level architecture of Isaac-sim & Replicator
 </p>
 
-### If you are new to Omniverse I'll strongly recommand you to watch the content below to get more familiar to this platform
----
+### Notice 
+--- 
+**If you are new to Omniverse I'll `strongly` recommand you to read the contents below to get more familiar to this platform**
 
 
 ### What will add later
@@ -23,3 +24,6 @@ Picture：High-level architecture of Isaac-sim & Replicator
 * [Replicator API](https://docs.omniverse.nvidia.com/py/replicator/1.5.1/source/extensions/omni.replicator.core/docs/API.html)
 * [Replicator Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_replicator.html#theory-behind-training-with-synthetic-data)
 * [Script Editor Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_script-editor.html)
+
+### Hardware I use
+* NVIDIA RTX4060Ti 16GB
