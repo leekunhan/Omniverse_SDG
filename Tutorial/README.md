@@ -20,37 +20,37 @@ Clone the repo
 ```shell
 git clone https://github.com/leekunhan/Omniverse_Synthetic_Generation.git
 ```
-change directory to turtorial
+change directory to Tutorial
 ```shell
-cd turtorial
+cd Tutorial
 ```
 ---
 # 1. Analyze Task  
-We need to know which part we need to do simulate, and we can get this information from analyzing golden data as below picture of this task.    
+To simulate accurately, we analyze the golden data shown below to understand the necessary components of this task.   
 <p align="center">
 <img height="250" src="../picture/golden_data.jpg">  
 </p>
 <p align="center">
 Picture：Golden Data
 </p>
-as we can see, the target can be shown as below:  
+From the analysis, we identify:
 
 * Five different stickers with important product information.
-* One sticker with multiple string.
+* One sticker composed of multiple strings.
 
 <p align="center">
 <img height="250" src="../picture/golden_data_after.png">  
 </p>
 <p align="center">
-Picture：Targets we are focusing on
+Picture：Target Elements
 </p>
-And there is one most important thing. Card Box background.  
+A critical aspect to note is the card box background.   
+<br><br/>
 
+# 2. Add CardBox  
 Fortunately, there are some pre-build cardbox usd files can use in omniverse(Isaac-sim), so that we don't need to build by ourself.   
 
-We can find card box usd in your nucleus localhost 
-
-# 2. Add CardBox
+You can find various card box USDs at: 
 
 ```
 omniverse://localhost/NVIDIA/Assets/ArchVis/Industrial/Containers/Cardboard/
@@ -59,48 +59,45 @@ omniverse://localhost/NVIDIA/Assets/ArchVis/Industrial/Containers/Cardboard/
 <img height="200" src="../picture/nucleus_cardbox.png">  
 </p>
 
-Then you can pick one card box type you like. I'll pick `CardBox_C2.usd`   
-and drag it into our scene.
+Select a card box type that suits your needs. I chose CardBox_C2.usd and added it to our scene.
 
 <p align="center">
 <img height="200" src="../picture/cardbox.png">  
 </p>
 
 # 3. Generate Sticker
-Please down all package in requirement run:
+Please install all required packages first:
+
 ```shell
 pip install -r requirements.txt
 ```
-
-Let start from generate easy sticker - String sticker.  
-we only need one python package - Pillow.
+Let's start with generating a simple string sticker using the Pillow library.
 ## String Sticker
-Code can be found in [sitcker_generate](./sticker_generate/string_sticker_generater.ipynb)  
+The code is available in [sitcker_generate](./sticker_generate/string_sticker_generater.ipynb)  
 1. Generate a blank background.
-2. Add random string on it.
-3. Save image.
-   
+2. Add random string to it.
+3. Save the image.
+
 <p align="center">
 <img height="150" src="../picture/stickers/syn/string_syn.png">  
 </p>
 
-**(NOTE: All detail can be change by case)**
+**Note: Details can be modified based on specific requirements.**
 
 ## Information Sticker
-Let's analyze the most complicated sticker to see what elements we need.
+Let's analyze the most complex sticker to identify the necessary components.
 <p align="center">
 <img height="250" src="../picture/real_product_sticker.png">  
 </p>
 
 **Element:**
-* Title (TO:, SO:, PO: ...)
-* Information (GBT, Carton ...)
+* Headers  (TO:, SO:, PO:, etc.)
+* Information (GBT, Carton, etc.)
 * Barcodes
-* Barcode Information (ADN-MB0019-001 ...)
-* Straght lines & Horizontal lines
+* Barcode Information (ADN-MB0019-001, etc.)
+* Vertical and horizontal lines
 
-We can seperate these elements to "Can done through Pillow" & "Can't done through Pillow", and there only Barcode can't done through Pillow, So we need to generate it in independent processing.
-
+We can categorize these elements into those that can be created with Pillow and those that cannot. The barcode generation requires a separate process.   
 ### Generate Barcode
 
 ### Combine All Elements
