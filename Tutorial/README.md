@@ -13,7 +13,7 @@ Table of content
 ---
 Workflow can see as below image.
 <p align="center">
-<img src="../picture/workflow.png" style="max-width:60%;height:auto;">  
+<img height="300" src="../picture/workflow.png">  
 </p>
 
 Clone the repo
@@ -28,7 +28,7 @@ cd turtorial
 # 1. Analyze Task  
 We need to know which part we need to do simulate, and we can get this information from analyzing golden data as below picture of this task.    
 <p align="center">
-<img src="../picture/golden_data.jpg" style="max-width:40%;height:auto;">  
+<img height="250" src="../picture/golden_data.jpg">  
 </p>
 <p align="center">
 Picture：Golden Data
@@ -39,7 +39,7 @@ as we can see, the target can be shown as below:
 * One sticker with multiple string.
 
 <p align="center">
-<img src="../picture/golden_data_after.png" style="max-width:40%;height:auto;">  
+<img height="250" src="../picture/golden_data_after.png">  
 </p>
 <p align="center">
 Picture：Targets we are focusing on
@@ -56,14 +56,14 @@ We can find card box usd in your nucleus localhost
 omniverse://localhost/NVIDIA/Assets/ArchVis/Industrial/Containers/Cardboard/
 ```
 <p align="center">
-<img src="../picture/nucleus_cardbox.png" style="max-width:60%;height:auto;">  
+<img height="200" src="../picture/nucleus_cardbox.png">  
 </p>
 
 Then you can pick one card box type you like. I'll pick `CardBox_C2.usd`   
 and drag it into our scene.
 
 <p align="center">
-<img src="../picture/cardbox.png" style="max-width:60%;height:auto;">  
+<img height="200" src="../picture/cardbox.png">  
 </p>
 
 # 3. Generate Sticker
@@ -81,7 +81,7 @@ Code can be found in [sitcker_generate](./sticker_generate/string_sticker_genera
 3. Save image.
    
 <p align="center">
-<img src="../picture/stickers/syn/string_syn.png" style="max-width:60%;height:auto;">  
+<img height="150" src="../picture/stickers/syn/string_syn.png">  
 </p>
 
 **(NOTE: All detail can be change by case)**
@@ -89,7 +89,7 @@ Code can be found in [sitcker_generate](./sticker_generate/string_sticker_genera
 ## Information Sticker
 Let's analyze the most complicated sticker to see what elements we need.
 <p align="center">
-<img src="../picture/real_product_sticker.png" style="max-width:60%;height:auto;">  
+<img height="250" src="../picture/real_product_sticker.png">  
 </p>
 
 **Element:**

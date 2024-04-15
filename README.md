@@ -5,13 +5,13 @@ Our task is to generate the **product sticker** to be placed outside the product
 
 Utilizing `Synthetic data` as a substitute for real-world collected data offers a perfect solution to the aforementioned issues. It significantly reduces manual labor costs and saves considerable time. As illustrated below, the Omniverse supports RTX Rendering and a Simulation engine, enabling the simulation of real-world data. Moreover, through the use of the application layer above, it is possible to harness the Replicator and employ API code to randomly orchestrate and generate a diverse array of synthetic data.
 <p align="center">
-<img src="./picture/architecture.png" style="max-width:65%;height:auto;">  
+<img height="400" src="./picture/architecture.png" >  
 </p>
 <p align="center">
 Picture：High-level architecture of Isaac-sim & Replicator
 </p>
 
-Let's start it! [Click](./turtorial)
+Let's start it! [Click](./Tutorial)
 
 ### Notice 
 --- 
