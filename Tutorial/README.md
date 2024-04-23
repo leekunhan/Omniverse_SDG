@@ -99,6 +99,12 @@ Let's analyze the most complex sticker to identify the necessary components.
 
 We can categorize these elements into those that can be created with Pillow and those that cannot. The barcode generation requires a separate process.   
 ### Generate Barcode
+please find code in `/sticker_generate/barcode_generate_code39.ipynb` [click](./sticker_generate/barcode_generate_code39.ipynb)
+1. Decide which barcode rules to use (change `barcode.get_barcode_class`)
+2. Decide how many word appear on barcode (change `n`)
+3. Set barcode name as barcode data (later need to appear on sticker)
+
+**Note: Details can be modified based on specific requirements.**
 
 ### Combine All Elements
 
