@@ -11,7 +11,11 @@ Utilizing `Synthetic data` as a substitute for real-world collected data offers 
 Picture：High-level architecture of Isaac-sim & Replicator
 </p>
 
-Let's start it! [Click](./Tutorial)
+We will talk about two part
+1. [Replicator](./Replicator/)
+2. [How to make real data.](./Real%20Data/)
+
+Let's start it! [Click](./Tutorial/)
 
 ### Notice 
 --- 
@@ -25,11 +29,14 @@ Let's start it! [Click](./Tutorial)
 ### Upcoming Additions
 ---
 * [NVIDIA TAO Toolkit](https://developer.nvidia.com/tao-toolkit)
+* [Replicator with TAO](https://github.com/NVIDIA-Omniverse/synthetic-data-examples/blob/main/end-to-end-workflows/palletjack_with_tao/cloud/training/cloud_train.ipynb)
 ### Resources
 ---
 * [Replicator API](https://docs.omniverse.nvidia.com/py/replicator/1.5.1/source/extensions/omni.replicator.core/docs/API.html)
 * [Replicator Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_replicator.html#theory-behind-training-with-synthetic-data)
 * [Script Editor Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_script-editor.html)
+* [isaac-sim + vscode](https://github.com/Toni-SM/semu.misc.vscode)
+* [DLI - Synthetic Data Generation for Training Computer Vision Models](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-10+V1)
 * [**GTC2024 - Empower Virtual Collaboration for Digital Twins Through Omniverse**](https://www.nvidia.com/en-us/on-demand/session/gtc24-s63282/)
 * [Youtube - Generate Synthetic Data with Omniverse Replicator](https://www.youtube.com/watch?v=amVjqaABfU8&ab_channel=NVIDIAOmniverse)
 * [Youtube - Deep Dive: Omniverse Replicator](https://www.youtube.com/watch?v=AGtIV5xgpYc&ab_channel=NVIDIAOmniverse)
