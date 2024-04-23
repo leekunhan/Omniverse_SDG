@@ -19,3 +19,5 @@ Closing these gaps is vital to ensure that synthetic datasets accurately reflect
 * Omni.syntheticdata
 * Annotators
 * Writers
+---
+go see prerequest to see what to do first. [click](./prerequest.md)
