@@ -9,6 +9,7 @@ import omni.replicator.core as rep
 We will talk most of the important API in SDG pipeline, more details can see in the [docs](https://docs.omniverse.nvidia.com/py/replicator/1.10.10/source/extensions/omni.replicator.core/docs/API.html#module-omni.replicator.core.trigger).  
 
 - [Omni.replicator.core](#omnireplicatorcore)
+  - [Core Function](#core-function)
   - [Create](#create)
     - [Object](#object)
     - [light](#light)
@@ -25,18 +26,24 @@ We will talk most of the important API in SDG pipeline, more details can see in 
     - [Run SDG](#run-sdg)
     - [Stop SDG](#stop-sdg)
 ---
+## Core Function
+`rep.new_layer`  
+Create a new authoring layer context. Use new_layer to keep replicator changes into a contained layer. If a layer of the same name already exists, the layer will be cleared before new changes are applied.  
+**parameters**  
+* name: str = None
+---
 `Create` and `Get` are foundational operations in SDG. Typically, the `Create` function is used in conjunction with `Distribution` to manage resources effectively.
 ## Create
 use create class such as ```rep.create.[cone, cube, light ... ]```
 
 ### Object
-* rep.create.cone
-* rep.create.cube
-* rep.create.cylinder
-* rep.create.disk
-* rep.create.plane
-* rep.create.sphere
-* rep.create.torus
+`rep.create.cone`  
+`rep.create.cube`  
+`rep.create.cylinder`  
+`rep.create.disk`  
+`rep.create.plane`  
+`rep.create.sphere`  
+`rep.create.torus`  
 
 the above objects have same parameters can use  
 **parameters**
@@ -53,8 +60,7 @@ the above objects have same parameters can use
 * count: int = 1
 
 ### light
-* rep.create.light
-
+`rep.create.light`  
 **parameters**  
 * rotation: Union[ReplicatorItem, float, Tuple[float]] = None
 * count: int = 1 
@@ -66,41 +72,37 @@ the above objects have same parameters can use
 
 
 ### Material
-* rep.create.material_omnipbr
-
+`rep.create.material_omnipbr`  
 **parameters**
 * count: int = 1
 * diffuse_texture: str = None
 
 ### different path
-* from_dir
-* from_usd
+`rep.create.from_dir`
+`rep.create.from_usd`
   * items: List[Union[ReplicatorItem, str, Path]]
   * semantics: List[Tuple[str, str]] = None
 
 ## Distribution
-* rep.distribution.choice
-* rep.distribution.log_uniform
-* rep.distribution.normal
-* rep.distribution.sequence
-* rep.distribution.uniform
-
+`rep.distribution.choice`  
+`rep.distribution.log_uniform`  
+`rep.distribution.normal`  
+`rep.distribution.sequence`  
+`rep.distribution.uniform`    
 **parameters**
-* lower: Tuple
-* upper: Tuple
-* num_samples: int = 1
-* seed: Optional[int] = None
-* name: Optional[str] = None
+   * lower: Tuple  
+   * upper: Tuple  
+   * num_samples: int = 1
+   * seed: Optional[int] = None
+   * name: Optional[str] = None
 
-* rep.distribution.combine  
-
+`rep.distribution.combine`  
 **parameters**
 * items: list
 * name: Optional[str] = None
 
 ## Get
-* rep.get.prims
-
+`rep.get.prims`  
 **parameters**
 * path_pattern: str = None
 * path_pattern_exclusion: str = None
@@ -113,8 +115,7 @@ the above objects have same parameters can use
 ## Modify
 `Modify` is used to change the behaviors of existing objects, such as their position, scale, and radius, depending on the object's properties.
 
-1. rep.modify.pose
-
+`rep.modify.pose`  
 **parameters**
 * position: Union[ReplicatorItem, float, Tuple[float]] = None
 * rotation: Union[ReplicatorItem, float, Tuple[float]] = None
@@ -127,54 +128,49 @@ the above objects have same parameters can use
 * input_prims: Union[ReplicatorItem, List[str]] = None
 
 ---
-2. rep.modify.semantics
-
+`rep.modify.semantics`  
 **parameters**
 * semantics: List[Tuple[str, str]] = None
 * input_prims: Union[ReplicatorItem, List[str]] = None
 
 ---
-3. rep.modify.visibility
-
+`rep.modify.visibility`  
 **parameters**
 * value: Union[ReplicatorItem, List[bool]] = None
 
 ## Randomizer
 Most of the time, `Randomizer` will also conjunction with `Distribution`.
 
-1. rep.randomizer.register
-Register a new function under omni.replicator.core.randomizer
-
+`rep.randomizer.register`
+Register a new function under omni.replicator.core.randomizer  
 **parameters**
 * fn: Callable[[...]
 * Union[ReplicatorItem, Node]], override: bool = True
 
-2. rep.randomizer.rotation
-
+`rep.randomizer.rotation`  
 **parameters**
 * min_angle: Tuple[float, float, float] = (- 180.0, - 180.0, - 180.0)
 * max_angle: Tuple[float, float, float] = (180.0, 180.0, 180.0),
 
-3. rep.randomizer.materials
-
+`rep.randomizer.materials`  
 **parameters**
 * materials: Union[ReplicatorItem, List[str]]
 
-4. rep.randomizer.color
-
+`rep.randomizer.color`   
 **parameters**
 * colors: Union[ReplicatorItem, List[Tuple[float]]]
 
 ## Triggers
 Triggers is use to represent the replicator result in omniverse
+`rep.trigger.on_frame`
+`rep.trigger.on_time`
 
----
-add property
+
 ## Physics
-* rep.physics.collider
+`rep.physics.collider`  
 approximation_shape: str
 
-* rep.physics.rigid_body
+`rep.physics.rigid_body`  
 velocity: Union[ReplicatorItem, Tuple[float, float, float]] = (0.0, 0.0, 0.0)
 
 ## Replicator Orchestration
