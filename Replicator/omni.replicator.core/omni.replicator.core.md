@@ -14,7 +14,7 @@ We will talk most of the important API in SDG pipeline, more details can get in 
     - [Object](#object)
     - [light](#light)
     - [Material](#material)
-    - [different path](#different-path)
+    - [Different Path](#different-path)
   - [Distribution](#distribution)
   - [Get](#get)
   - [Modify](#modify)
@@ -79,8 +79,8 @@ the above objects have same parameters can use as below.
 > * count: int = 1
 > * diffuse_texture: str = None
 
-### different path
-`rep.create.from_dir()`
+### Different Path
+`rep.create.from_dir()`  
 `rep.create.from_usd()`  
 **parameters**  
 > * items: List[Union[ReplicatorItem, str, Path]]
@@ -104,8 +104,7 @@ the above objects have same parameters can use as below.
 > * items: list
 > * name: Optional[str] = None
 
-## Get
-→ ReplicatorItem  
+## Get 
 `rep.get.prims()`  
 **parameters**
 > * path_pattern: str = None
