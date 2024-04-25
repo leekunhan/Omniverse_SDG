@@ -32,7 +32,7 @@ and a brief practice you can walk through! [[Turn to tutorial]](./Tutorial/)
 * [Github - Replicator with TAO](https://github.com/NVIDIA-Omniverse/synthetic-data-examples/blob/main/end-to-end-workflows/palletjack_with_tao/cloud/training/cloud_train.ipynb)
 ### Resources
 ---
-* [Replicator API](https://docs.omniverse.nvidia.com/py/replicator/1.5.1/source/extensions/omni.replicator.core/docs/API.html)
+* [Replicator API](https://docs.omniverse.nvidia.com/py/replicator/1.10.10/source/extensions/omni.replicator.core/docs/API.html)
 * [Replicator Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_replicator.html#theory-behind-training-with-synthetic-data)
 * [Script Editor Docs](https://docs.omniverse.nvidia.com/extensions/latest/ext_script-editor.html)
 * [Github - isaac-sim + vscode](https://github.com/Toni-SM/semu.misc.vscode)

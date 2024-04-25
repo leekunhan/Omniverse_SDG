@@ -1,5 +1,5 @@
 # Replicator
-We can generate randomize data throught Replicator API, which is an open and modular framework. `Replicator` + `Annotator` + `Writer` are available to address specific requirements for training AI models especially vision model. Replicator can use in [Isaac-sim](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html) and [Omniverse code](https://docs.omniverse.nvidia.com/code/latest/index.html).  
+We can generate randomize data throught Replicator API, which is an open and modular framework. `Replicator` + `Annotator` + `Writer` are available to address specific requirements for training AI models especially vision model, and can be used in either [Isaac-sim](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html) or [Omniverse code](https://docs.omniverse.nvidia.com/code/latest/index.html).  
 ## Background
 Deep Neural Network need large sets of annotated image datas, trained for the perception tasks such as detection, classification and segmentation.  
 ## Closing the Sim to Real Gap
@@ -19,6 +19,7 @@ Closing these gaps is vital to ensure that synthetic datasets accurately reflect
 * Omni.syntheticdata
 * Annotators
 * Writers
----
+
+## Started
 1. follow the [prerequest](./prerequest.md) to set up environment.  
-2. Familiar to [replicator API](./omni.replicator.core/omni.replicator.core.md)
+2. Familiar with [replicator API](./omni.replicator.core/omni.replicator.core.md)

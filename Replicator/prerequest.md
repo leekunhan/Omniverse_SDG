@@ -1,13 +1,19 @@
 # Prerequest
 ### 1. Open Isaac sim
-* Download Omniverse platform from [here](https://www.nvidia.com/zh-tw/omniverse/download/), you can choose either Linux or Windows version, and finished setting (you can follow [this video](https://www.youtube.com/watch?v=j4_-yush6pc&t=1s)).
+* Download Omniverse platform from [here](https://www.nvidia.com/zh-tw/omniverse/download/), you can choose either Linux or Windows version, and finished setting (you can follow with [this video](https://www.youtube.com/watch?v=j4_-yush6pc&t=1s)).
 * Go to **"Exchange"** page download `Isaac-sim` with version 2023.1.1.
-* Click on first wich will have UI and terminal present.
+* Click on first option which will have UI and terminal present.
 <p align="center">
 <img height="400" src="./pic/loading.png" >  
 </p>
 
-### 2. Connect VScode
+### 2. Operate in Isaac-sim
+navigate to `Window` -> `Script Editor`,  and click to activate the Script Editor kit. This will enable you to write your Python scripts in Isaac Sim.
+<p align="center">
+<img height="400" src="./pic/script-editor.png" >  
+</p>
+
+### 3. Connect VScode (Optional)
 We can enhance our scripting convenience in Isaac Sim by connecting VScode and the Script Editor using the extension available on GitHub named [embedded-vscode-for-nvidia-omniverse](https://github.com/Toni-SM/semu.misc.vscode).  
 1. Start Isaac Sim and navigate to `Window` -> `Extensions`. Search for `vscode`, which will display the following result:
 <p align="center">
@@ -25,3 +31,5 @@ After downloading it, an Omniverse icon will appear in the left column. The conn
 <p align="center">
 <img height="400" src="./pic/vs_column.png" >  
 </p>
+
+
