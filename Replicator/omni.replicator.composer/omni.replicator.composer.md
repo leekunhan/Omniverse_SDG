@@ -1,4 +1,4 @@
-# omni.replicator.composer
+# omni.replicator.composer (Deprecated)
 
 use composer to use replicator from yaml file.
 
@@ -10,3 +10,4 @@ follow [replicator parameter lists](https://docs.omniverse.nvidia.com/isaacsim/l
 
 ## Reference
 [Github - replicator_yaml](https://github.com/NVIDIA-Omniverse/synthetic-data-examples/tree/main/omni.replicator_yaml)
+

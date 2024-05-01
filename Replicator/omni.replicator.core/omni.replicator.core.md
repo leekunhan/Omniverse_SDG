@@ -6,7 +6,7 @@ First let's use below import code in order to import API
 import omni.replicator.core as rep
 ```
 
-We will talk most of the important API in SDG pipeline, more details can get in the [docs](https://docs.omniverse.nvidia.com/py/replicator/1.10.10/source/extensions/omni.replicator.core/docs/API.html#module-omni.replicator.core.trigger).  
+We will talk most of the important API in SDG pipeline, more details can get in the [docs](https://docs.omniverse.nvidia.com/py/replicator/1.10.10/source/extensions/omni.replicator.core/docs/API.html).  
 
 - [Omni.replicator.core](#omnireplicatorcore)
   - [Core Function](#core-function)
