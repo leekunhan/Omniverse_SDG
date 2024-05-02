@@ -1,0 +1,9 @@
+import omni.replicator.core as rep
+
+with rep.new_layer():
+    # Create simple shapes to manipulate
+    cubes = rep.create.cube(
+        semantics=[("class", "cube")],
+        position=rep.distribution.uniform((25, 25, 0), (-25, -25, 0)),
+        count=6,
+    )
