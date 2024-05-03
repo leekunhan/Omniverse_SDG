@@ -160,7 +160,7 @@ Register a new function under omni.replicator.core.randomizer
 > * colors: Union[ReplicatorItem, List[Tuple[float]]]
 
 ## Triggers
-Triggers is use to represent the replicator result in omniverse
+Triggers is use to represent the replicator result in omniverse  
 `rep.trigger.on_frame()`  
 **parameters**
 > * interval: int = 1
