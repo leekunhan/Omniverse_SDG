@@ -25,7 +25,6 @@ with rep.new_layer():
             scale = 10,
             semantics=[("shape", "torus")]
         )
-
     mat = rep.create.material_omnipbr(
         diffuse=rep.distribution.uniform((0, 0, 0), (1, 1, 1)),
         roughness=rep.distribution.uniform(0, 1),
@@ -34,13 +33,11 @@ with rep.new_layer():
         emissive_intensity=rep.distribution.uniform(0, 1000),
         count = 10
         )
-
     def mat_change():
         with torus:
             rep.modify.pose(position=rep.distribution.uniform((-25, -25, 0), (25, 25, 0)),
                             rotation = rep.distribution.uniform((0, 0, -180),(0, 0, 180)))
             rep.randomizer.materials(mat)
-    rep.randomizer.register(mat_change)
-
-    with rep.trigger.on_frame(max_execs = 100, interval =5):
-        rep.randomizer.mat_change()
+rep.randomizer.register(mat_change)
+with rep.trigger.on_frame(max_execs = 100, interval =5):
+    rep.randomizer.mat_change()

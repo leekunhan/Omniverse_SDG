@@ -4,7 +4,7 @@ import numpy as np
 with rep.new_layer():
     rep.set_global_seed(np.random.randint(0, 1000))
     # Create light
-    distance_light = rep.create.light(
+    cylinder_light = rep.create.light(
         position = (0, 0, 10),
         rotation=rep.distribution.uniform((0,-0,-180), (0,0,180)),
         intensity=rep.distribution.normal(300000, 2),
