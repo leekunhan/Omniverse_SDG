@@ -29,3 +29,4 @@ Closing these gaps is vital to ensure that synthetic datasets accurately reflect
 * [Omni Replicator](https://docs.omniverse.nvidia.com/py/replicator/1.10.10/index.html#)
 * [Extensions Docs](https://docs.omniverse.nvidia.com/extensions/latest/index.html)
 * [Isaac Sim Replicator](https://docs.omniverse.nvidia.com/isaacsim/latest/replicator_tutorials/tutorial_replicator_getting_started.html)
+* [Replicator Tutorial](https://docs.omniverse.nvidia.com/extensions/latest/ext_replicator.html#api-documentation)
