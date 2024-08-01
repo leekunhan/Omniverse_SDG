@@ -15,8 +15,6 @@ We will talk about two part
 1. [Replicator](./Replicator/)
 2. [How to make real data.](./Real%20Data/)
 
-and a brief practice you can walk through! [[Turn to tutorial]](./Tutorial/)
-
 ### Notice 
 --- 
 **If you are new to Omniverse I `strongly` recommend reading the following contents to become more acquainted with this platform.**
